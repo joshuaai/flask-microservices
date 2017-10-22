@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+
+  flask-microservices-app-service:
+    container_name: flask-microservices-app-service
+    build: .
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - 5001:5000 # expose ports - HOST:CONTAINER
+    environment:
+      - APP_SETTINGS=project.config.DevelopmentConfig
