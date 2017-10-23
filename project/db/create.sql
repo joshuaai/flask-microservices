@@ -1,0 +1,3 @@
+CREATE DATABASE fma_prod;
+CREATE DATABASE fma_dev;
+CREATE DATABASE fma_test;
