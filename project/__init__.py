@@ -13,7 +13,6 @@ APP.config.from_object(app_settings)
 
 # instantiate the db
 db = SQLAlchemy(APP)
-APP.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # model
 class User(db.Model):
